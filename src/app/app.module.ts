@@ -7,6 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ShowcaseItemDisplayComponent } from './showcase-item-display/showcase-item-display.component';
 import { ShowcaseItemSourceComponent } from './showcase-item-source/showcase-item-source.component';
 
+import { MatCardModule} from '@angular/material/card';
+import { MatButtonModule} from '@angular/material/button';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +19,9 @@ import { ShowcaseItemSourceComponent } from './showcase-item-source/showcase-ite
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

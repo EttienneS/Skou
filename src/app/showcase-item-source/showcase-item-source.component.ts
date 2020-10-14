@@ -17,6 +17,15 @@ export class ShowcaseItemSourceComponent implements OnInit {
     },
     {
       name: 'Item 3'
+    },
+    {
+      name: 'Item 4',
+    },
+    {
+      name: 'Item 5',
+    },
+    {
+      name: 'Item 6'
     }
   ]
 
