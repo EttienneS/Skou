@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IShowcaseItem } from '../IShowcaseItem';
+import { ShowcaseItemService } from '../showcase-item-service';
 
 @Component({
   selector: 'showcase-item-container',
@@ -8,35 +9,17 @@ import { IShowcaseItem } from '../IShowcaseItem';
 })
 
 export class ShowcaseItemContainerComponent implements OnInit {
+  
+  showcaseItems : IShowcaseItem[];
 
-  showcaseitems: IShowcaseItem[] = [
-    {
-      name: 'Item 1',
-    },
-    {
-      name: 'Item 2',
-    },
-    {
-      name: 'Item 3'
-    },
-    {
-      name: 'Item 4',
-    },
-    {
-      name: 'Item 5',
-    },
-    {
-      name: 'Item 6'
-    }
-  ]
-
-  constructor() { }
-
+  constructor(private showcaseItemService: ShowcaseItemService) { }
+  
   ngOnInit(): void {
+    this.showcaseItems = this.showcaseItemService.get();
   }
   
-  onShowcaseItemHide(showcaseItem: IShowcaseItem)
+  onShowcaseItemDelete(showcaseItem: IShowcaseItem)
   {
-    console.log("Hide: "+ showcaseItem.name);
+    this.showcaseItemService.delete(showcaseItem);
   }
 }
