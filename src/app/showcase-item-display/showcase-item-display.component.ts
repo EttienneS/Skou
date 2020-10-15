@@ -4,18 +4,21 @@ import { IShowcaseItem } from '../IShowcaseItem';
 @Component({
   selector: 'showcase-item-display',
   templateUrl: './showcase-item-display.component.html',
-  styleUrls: ['./showcase-item-display.component.css']
+  styleUrls: ['./showcase-item-display.component.css'],
 })
 export class ShowcaseItemDisplayComponent {
-  
   @Input() showcaseitem: IShowcaseItem;
   @Output() hide = new EventEmitter();
-  
-  constructor() { }
-  
+  @Output() like = new EventEmitter();
+
+  constructor() {}
+
   onHide() {
-    console.log("Hide clicked on component!");
     this.hide.emit(this.showcaseitem);
   }
-}
 
+  onLike() {
+    this.showcaseitem.liked = !this.showcaseitem.liked;
+    this.like.emit(this.showcaseitem);
+  }
+}

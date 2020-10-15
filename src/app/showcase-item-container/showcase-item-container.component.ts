@@ -5,21 +5,23 @@ import { ShowcaseItemService } from '../showcase-item-service';
 @Component({
   selector: 'showcase-item-container',
   templateUrl: './showcase-item-container.component.html',
-  styleUrls: ['./showcase-item-container.component.css']
+  styleUrls: ['./showcase-item-container.component.css'],
 })
-
 export class ShowcaseItemContainerComponent implements OnInit {
-  
-  showcaseItems : IShowcaseItem[];
+  showcaseItems: IShowcaseItem[];
 
-  constructor(private showcaseItemService: ShowcaseItemService) { }
-  
+  constructor(private showcaseItemService: ShowcaseItemService) {}
+
   ngOnInit(): void {
     this.showcaseItems = this.showcaseItemService.get();
   }
-  
-  onShowcaseItemDelete(showcaseItem: IShowcaseItem)
-  {
+
+  onShowcaseItemDelete(showcaseItem: IShowcaseItem) {
     this.showcaseItemService.delete(showcaseItem);
+  }
+
+  onShowcaseItemLiked(showcaseItem: IShowcaseItem) {
+    showcaseItem.liked = showcaseItem.liked;
+    this.showcaseItemService.update(showcaseItem);
   }
 }
