@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { IShowcaseItem } from '../IShowcaseItem';
 
 @Component({
-  selector: 'app-showcase-item-source',
-  templateUrl: './showcase-item-source.component.html',
-  styleUrls: ['./showcase-item-source.component.css']
+  selector: 'showcase-item-container',
+  templateUrl: './showcase-item-container.component.html',
+  styleUrls: ['./showcase-item-container.component.css']
 })
-export class ShowcaseItemSourceComponent implements OnInit {
+
+export class ShowcaseItemContainerComponent implements OnInit {
 
   showcaseitems: IShowcaseItem[] = [
     {

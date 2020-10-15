@@ -1,6 +1,5 @@
 <div class="showcase-grid">
-    <showcase-item-display class="showcase-grid-item" 
-                           *ngFor="let showcaseitem of showcaseitems" 
+    <showcase-item-display *ngFor="let showcaseitem of showcaseitems" 
                            (hide)="onShowcaseItemHide($event)" 
                            [showcaseitem]="showcaseitem" >
     </showcase-item-display>

@@ -1,8 +1,9 @@
 .showcase-card {
     max-width: 400px;
+    min-width: 200px;
 }
 
-.example-header-image {
-    background-image: url('https://images.unsplash.com/photo-1602529898233-741e0215321e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"');
+.header-image {
+    background-image: url("../../assets/logo.png");
     background-size: cover;
 }
