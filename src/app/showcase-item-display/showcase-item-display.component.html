@@ -1,21 +1,24 @@
 <mat-card class="showcase-card">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>{{ showcaseitem.name }}</mat-card-title>
-    <mat-card-subtitle>A test showcase item</mat-card-subtitle>
+    <mat-card-title>{{ showcaseitem.Name }}</mat-card-title>
+    <mat-card-subtitle>{{ showcaseitem.SubTitle }}</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image src="../../assets/logo.png" F alt="Preview" />
+  <img mat-card-image src="{{ showcaseitem.Image }}" F alt="Preview" />
   <mat-card-content>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.
-    </p>
+    <p>{{ showcaseitem.Description }}.</p>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-raised-button color="primary" (click)="onLike()">
-      {{ showcaseitem.liked ? "LIKE" : "UNLIKE" }}
+    <a mat-raised-button color="primary" href="{{ showcaseitem.DemoUrl }}"
+      >DEMO</a
+    >
+
+    <a mat-raised-button color="accent" href="{{ showcaseitem.ProjectUrl }}"
+      >SOURCE</a
+    >
+
+    <button mat-button color="accent" (click)="onLike()">
+      {{ showcaseitem.Liked ? "LIKE" : "UNLIKE" }}
     </button>
     <button mat-button color="accent" (click)="onHide()">HIDE</button>
   </mat-card-actions>

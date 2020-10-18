@@ -18,7 +18,8 @@ export class ShowcaseItemDisplayComponent {
   }
 
   onLike() {
-    this.showcaseitem.liked = !this.showcaseitem.liked;
+    this.showcaseitem.Liked = !this.showcaseitem.Liked;
     this.like.emit(this.showcaseitem);
   }
+  
 }

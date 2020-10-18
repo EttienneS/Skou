@@ -21,7 +21,7 @@ export class ShowcaseItemContainerComponent implements OnInit {
   }
 
   onShowcaseItemLiked(showcaseItem: IShowcaseItem) {
-    showcaseItem.liked = showcaseItem.liked;
+    showcaseItem.Liked = showcaseItem.Liked;
     this.showcaseItemService.update(showcaseItem);
   }
 }
