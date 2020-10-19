@@ -14,7 +14,7 @@ export class ShowcaseItemService {
       Image:
         'https://images.unsplash.com/photo-1596778402284-8398c7b09521?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
       ProjectUrl: 'https://github.com/lekker-dev/Lekker.Skou',
-      DemoUrl: '',
+      DemoUrl: 'https://lkkr.azurewebsites.net/',
       Tags: [Technology.ANG],
     },
     {
