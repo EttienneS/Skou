@@ -4,6 +4,7 @@
     <mat-card-title>{{ showcaseitem.Name }}</mat-card-title>
     <mat-card-subtitle>{{ showcaseitem.SubTitle }}</mat-card-subtitle>
   </mat-card-header>
+  <showcase-tag-display [Tags]="showcaseitem.Tags"></showcase-tag-display>
   <img mat-card-image src="{{ showcaseitem.Image }}" F alt="Preview" />
   <mat-card-content>
     <p>{{ showcaseitem.Description }}.</p>

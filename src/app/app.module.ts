@@ -9,12 +9,14 @@ import { ShowcaseItemDisplayComponent } from './showcase-item-display/showcase-i
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { ShowcaseItemContainerComponent } from './showcase-item-container/showcase-item-container.component';
+import { ShowcaseTagDisplayComponent } from './showcase-tag-display/showcase-tag-display.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ShowcaseItemDisplayComponent,
     ShowcaseItemContainerComponent,
+    ShowcaseTagDisplayComponent,
   ],
   imports: [
     BrowserModule,

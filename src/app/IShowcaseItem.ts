@@ -10,4 +10,6 @@ export interface IShowcaseItem {
   DemoUrl: string;
 
   Description: string;
+
+  Tags: string[]
 }
