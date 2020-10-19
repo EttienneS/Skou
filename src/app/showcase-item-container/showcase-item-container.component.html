@@ -2,6 +2,7 @@
   <showcase-item-display
     *ngFor="let showcaseitem of showcaseItems"
     (hide)="onShowcaseItemHide($event)"
+    (filter)="onShowcaseItemFilter($event)"
     [showcaseitem]="showcaseitem"
   >
   </showcase-item-display>

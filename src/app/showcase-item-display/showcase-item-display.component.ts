@@ -9,11 +9,12 @@ import { IShowcaseItem } from '../IShowcaseItem';
 export class ShowcaseItemDisplayComponent {
   @Input() showcaseitem: IShowcaseItem;
   @Output() hide = new EventEmitter();
+  @Output() filter = new EventEmitter();
 
   constructor() {}
 
-  onHide() {
-    this.hide.emit(this.showcaseitem);
+  onFilter(tag: string) {
+    // bubble up event if anything else subscribes to it
+    this.filter.emit(tag);
   }
-  
 }

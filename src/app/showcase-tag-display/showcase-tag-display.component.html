@@ -1,1 +1,9 @@
-<span class="label" *ngFor="let tag of Tags">{{tag}}</span>
+<button
+  *ngFor="let tag of Tags"
+  mat-button
+  color="primary"
+  class="tag-button"
+  (click)="onFilter(tag)"
+>
+  {{ tag }}
+</button>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Console } from 'console';
 import { IShowcaseItem } from '../IShowcaseItem';
 import { ShowcaseItemService } from '../showcase-item-service';
 
@@ -13,10 +14,22 @@ export class ShowcaseItemContainerComponent implements OnInit {
   constructor(private showcaseItemService: ShowcaseItemService) {}
 
   ngOnInit(): void {
-    this.showcaseItems = this.showcaseItemService.get();
+    this.refreshItems();
   }
 
   onShowcaseItemHide(showcaseItem: IShowcaseItem) {
     this.showcaseItemService.delete(showcaseItem);
+  }
+
+  onShowcaseItemFilter(tag: string) {
+    this.refreshItems();
+
+    this.showcaseItems = this.showcaseItems.filter((item) =>
+      item.Tags.includes(tag)
+    );
+  }
+
+  refreshItems() {
+    this.showcaseItems = this.showcaseItemService.get();
   }
 }

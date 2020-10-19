@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'showcase-tag-display',
@@ -7,8 +7,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ShowcaseTagDisplayComponent implements OnInit {
   @Input() Tags: string[];
+  @Output() filter = new EventEmitter();
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  onFilter(tag: string) {
+    this.filter.emit(tag);
+  }
 }

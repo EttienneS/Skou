@@ -1,13 +1,6 @@
-.label {
-  background-color: #8d8d8d;
-  color: #ffffff;
-  border-radius: 4px;
-  padding: 2px 8px;
+.tag-button {
   font-style: italic;
-  width: max-content;
-}
-span {
-  display: inline-block;
-  margin-right: 5px;
-  margin-bottom: 5px;
+  margin-bottom:  5px;
+  margin-right:  5px;
+  background-color: rgb(240, 240, 240);
 }
