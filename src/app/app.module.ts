@@ -4,17 +4,28 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ShowcaseItemDisplayComponent } from './showcase-item-display/showcase-item-display.component';
+
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { ShowcaseItemContainerComponent } from './showcase-item-container/showcase-item-container.component';
+import { TechnologyTagDisplayComponent } from './technology-tag-display/technology-tag-display.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ShowcaseItemDisplayComponent,
+    ShowcaseItemContainerComponent,
+    TechnologyTagDisplayComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatButtonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

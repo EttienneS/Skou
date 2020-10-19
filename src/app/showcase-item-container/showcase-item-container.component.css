@@ -1,0 +1,15 @@
+.showcase-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 50px;
+  padding: 5%;
+}
+.main-tag-display {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: white;
+  width: auto;
+  padding-top: 5px;
+  padding-left: 5px;
+  border-radius: 5px;
+}

@@ -1,0 +1,22 @@
+<mat-card class="showcase-card">
+  <mat-card-header>
+    <div mat-card-avatar class="header-image"></div>
+    <mat-card-title>{{ showcaseitem.Name }}</mat-card-title>
+    <mat-card-subtitle>{{ showcaseitem.SubTitle }}</mat-card-subtitle>
+  </mat-card-header>
+  <technology-tag-display [Tags]="showcaseitem.Tags" (filter)="onFilter($event)"></technology-tag-display>
+  <img mat-card-image src="{{ showcaseitem.Image }}" F alt="Preview" />
+  <mat-card-content>
+    <p>{{ showcaseitem.Description }}.</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-raised-button color="primary" href="{{ showcaseitem.DemoUrl }}"
+      >DEMO</a
+    >
+
+    <a mat-raised-button color="accent" href="{{ showcaseitem.ProjectUrl }}"
+      >SOURCE</a
+    >
+    
+  </mat-card-actions>
+</mat-card>
