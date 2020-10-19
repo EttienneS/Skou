@@ -2,7 +2,7 @@ name: 'Deploy to Azure'
 
 on:
   push:
-    branches: [ master ]
+    branches: [ develop ]
 
 env:
   AZURE_WEBAPP_NAME: lekkerskou    # set this to your application's name
