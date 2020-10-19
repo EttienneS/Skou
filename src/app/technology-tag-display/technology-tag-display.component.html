@@ -1,0 +1,9 @@
+<button
+  *ngFor="let tag of Tags"
+  mat-button
+  color="primary"
+  class="tag-button"
+  (click)="onFilter(tag)"
+>
+  {{ tag.toString() }}
+</button>

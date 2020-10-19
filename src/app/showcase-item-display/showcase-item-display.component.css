@@ -1,0 +1,9 @@
+.showcase-card {
+  max-width: 400px;
+  min-width: 200px;
+}
+
+.header-image {
+  background-image: url('../../assets/logo.png');
+  background-size: cover;
+}

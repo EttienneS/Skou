@@ -1,0 +1,16 @@
+<div class="showcase-grid">
+  <technology-tag-display
+    class="main-tag-display"
+    [Tags]="showcaseTags"
+    (filter)="onShowcaseItemFilter($event)"
+  >
+  </technology-tag-display>
+
+  <showcase-item-display
+    *ngFor="let showcaseitem of showcaseItems"
+    (hide)="onShowcaseItemHide($event)"
+    (filter)="onShowcaseItemFilter($event)"
+    [showcaseitem]="showcaseitem"
+  >
+  </showcase-item-display>
+</div>
