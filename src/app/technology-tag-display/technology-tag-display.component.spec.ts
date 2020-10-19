@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ShowcaseTagDisplayComponent } from './showcase-tag-display.component';
+import { TechnologyTagDisplayComponent } from './technology-tag-display.component';
 
 describe('ShowcaseTagDisplayComponent', () => {
-  let component: ShowcaseTagDisplayComponent;
-  let fixture: ComponentFixture<ShowcaseTagDisplayComponent>;
+  let component: TechnologyTagDisplayComponent;
+  let fixture: ComponentFixture<TechnologyTagDisplayComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ShowcaseTagDisplayComponent ]
+      declarations: [ TechnologyTagDisplayComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ShowcaseTagDisplayComponent);
+    fixture = TestBed.createComponent(TechnologyTagDisplayComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

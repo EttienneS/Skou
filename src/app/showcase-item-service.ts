@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { IShowcaseItem } from './IShowcaseItem';
+import { Technology } from './Technology';
 
 @Injectable({
   providedIn: 'root',
@@ -14,7 +15,7 @@ export class ShowcaseItemService {
         'https://images.unsplash.com/photo-1596778402284-8398c7b09521?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
       ProjectUrl: 'https://github.com/lekker-dev/Lekker.Skou',
       DemoUrl: '',
-      Tags: ['Angular']
+      Tags: [Technology.ANG],
     },
     {
       Name: 'Lekker Kort',
@@ -28,7 +29,7 @@ export class ShowcaseItemService {
         'https://lekkerkort.azurewebsites.net/hu-chen-60XLoOgwkfA-unsplash.0c26fed9ae688c2213ed.jpg',
       ProjectUrl: 'https://github.com/lekker-dev/Lekker.Kort',
       DemoUrl: 'https://lekkerkort.azurewebsites.net/',
-      Tags: [ '.NET Core', 'Angular']
+      Tags: [Technology.ANG, Technology.NETCORE],
     },
     {
       Name: 'Lekker Luister',
@@ -38,12 +39,11 @@ export class ShowcaseItemService {
         'https://images.unsplash.com/photo-1445985543470-41fba5c3144a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
       ProjectUrl: '',
       DemoUrl: '',
-      Tags: [ '.NET Core', 'Angular']
-    }
+      Tags: [Technology.ANG, Technology.NETCORE],
+    },
   ];
 
-  get() : IShowcaseItem[]
-  {
+  get(): IShowcaseItem[] {
     return this.showcaseitems;
   }
 
@@ -58,8 +58,8 @@ export class ShowcaseItemService {
     }
   }
 
-  getTags() : string[]
-  {
-    return this.showcaseitems.flatMap(s=> s.Tags);
+  getTags(): Technology[] {
+    // make a set to get an unique array of iets
+    return [...new Set(this.showcaseitems.flatMap((s) => s.Tags))];
   }
 }

@@ -1,3 +1,6 @@
+import { ITS_JUST_ANGULAR } from '@angular/core/src/r3_symbols';
+import { Technology } from './Technology';
+
 export interface IShowcaseItem {
   Name: string;
 
@@ -11,5 +14,7 @@ export interface IShowcaseItem {
 
   Description: string;
 
-  Tags: string[]
+  Tags: Technology[]
 }
+
+;

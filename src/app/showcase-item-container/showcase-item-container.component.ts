@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Console } from 'console';
 import { IShowcaseItem } from '../IShowcaseItem';
+import { Technology } from '../Technology';
 import { ShowcaseItemService } from '../showcase-item-service';
 
 @Component({
@@ -10,6 +10,7 @@ import { ShowcaseItemService } from '../showcase-item-service';
 })
 export class ShowcaseItemContainerComponent implements OnInit {
   showcaseItems: IShowcaseItem[];
+  showcaseTags: Technology[];
 
   constructor(private showcaseItemService: ShowcaseItemService) {}
 
@@ -21,7 +22,7 @@ export class ShowcaseItemContainerComponent implements OnInit {
     this.showcaseItemService.delete(showcaseItem);
   }
 
-  onShowcaseItemFilter(tag: string) {
+  onShowcaseItemFilter(tag: Technology) {
     this.refreshItems();
 
     this.showcaseItems = this.showcaseItems.filter((item) =>
@@ -31,5 +32,6 @@ export class ShowcaseItemContainerComponent implements OnInit {
 
   refreshItems() {
     this.showcaseItems = this.showcaseItemService.get();
+    this.showcaseTags = this.showcaseItemService.getTags();
   }
 }
