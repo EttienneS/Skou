@@ -10,7 +10,4 @@ export interface IShowcaseItem {
   DemoUrl: string;
 
   Description: string;
-
-  // todo: for testing purposes, can be removed later
-  Liked: boolean;
 }

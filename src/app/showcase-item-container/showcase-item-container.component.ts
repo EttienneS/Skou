@@ -16,12 +16,7 @@ export class ShowcaseItemContainerComponent implements OnInit {
     this.showcaseItems = this.showcaseItemService.get();
   }
 
-  onShowcaseItemDelete(showcaseItem: IShowcaseItem) {
+  onShowcaseItemHide(showcaseItem: IShowcaseItem) {
     this.showcaseItemService.delete(showcaseItem);
-  }
-
-  onShowcaseItemLiked(showcaseItem: IShowcaseItem) {
-    showcaseItem.Liked = showcaseItem.Liked;
-    this.showcaseItemService.update(showcaseItem);
   }
 }

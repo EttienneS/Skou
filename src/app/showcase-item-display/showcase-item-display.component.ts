@@ -9,17 +9,11 @@ import { IShowcaseItem } from '../IShowcaseItem';
 export class ShowcaseItemDisplayComponent {
   @Input() showcaseitem: IShowcaseItem;
   @Output() hide = new EventEmitter();
-  @Output() like = new EventEmitter();
 
   constructor() {}
 
   onHide() {
     this.hide.emit(this.showcaseitem);
-  }
-
-  onLike() {
-    this.showcaseitem.Liked = !this.showcaseitem.Liked;
-    this.like.emit(this.showcaseitem);
   }
   
 }
