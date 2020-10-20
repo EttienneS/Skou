@@ -16,7 +16,7 @@ import { TechnologyTagDisplayComponent } from './technology-tag-display/technolo
     AppComponent,
     ShowcaseItemDisplayComponent,
     ShowcaseItemContainerComponent,
-    TechnologyTagDisplayComponent,
+    TechnologyTagDisplayComponent
   ],
   imports: [
     BrowserModule,

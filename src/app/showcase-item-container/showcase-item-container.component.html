@@ -1,11 +1,4 @@
 <div class="showcase-grid">
-  <technology-tag-display
-    class="main-tag-display"
-    [Tags]="showcaseTags"
-    (filter)="onShowcaseItemFilter($event)"
-  >
-  </technology-tag-display>
-
   <showcase-item-display
     *ngFor="let showcaseitem of showcaseItems"
     (hide)="onShowcaseItemHide($event)"
@@ -13,4 +6,12 @@
     [showcaseitem]="showcaseitem"
   >
   </showcase-item-display>
+
+  <div class="main-tag-display">
+    <technology-tag-display
+      [Tags]="showcaseTags"
+      (filter)="onShowcaseItemFilter($event)"
+    >
+    </technology-tag-display>
+  </div>
 </div>
