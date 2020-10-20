@@ -9,8 +9,8 @@ export class ShowcaseItemService {
   showcaseitems: IShowcaseItem[] = [
     {
       Name: 'Lekker Skou',
-      SubTitle: 'Kom kyk wat ons maak!',
-      Description: `A "Lekker" web application showcase to have a handy landing page for all other projects`,
+      SubTitle: 'See all the "lekker" projects!',
+      Description: `A "lekker" web application showcase to have a handy landing page for all other projects`,
       Image:
         'https://images.unsplash.com/photo-1596778402284-8398c7b09521?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
       ProjectUrl: 'https://github.com/lekker-dev/Lekker.Skou',
@@ -19,8 +19,8 @@ export class ShowcaseItemService {
     },
     {
       Name: 'Lekker Kort',
-      SubTitle: 'Maak hom lekker kort!',
-      Description: `Tired of drab, informative URLs? Why not inject some 'lekker' flavour into your links with Lekker.Kort!`,
+      SubTitle: 'Shorten or make a URL "lekker"!',
+      Description: `Tired of drab, informative URLs? Why not inject some 'lekker' flavour into your links with this URL modifier`,
       Image:
         'https://lekkerkort.azurewebsites.net/hu-chen-60XLoOgwkfA-unsplash.0c26fed9ae688c2213ed.jpg',
       ProjectUrl: 'https://github.com/lekker-dev/Lekker.Kort',
@@ -29,8 +29,8 @@ export class ShowcaseItemService {
     },
     {
       Name: 'Lekker Luister',
-      SubTitle: 'Luister na iets lekker!',
-      Description: `A "Lekker" web application to get some music information from music streaming services such as Deezer and Spotify`,
+      SubTitle: 'Discover new "lekker" music!',
+      Description: `A "lekker" web application to get some music information from music streaming services such as Deezer and Spotify`,
       Image:
         'https://images.unsplash.com/photo-1445985543470-41fba5c3144a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
       ProjectUrl: '',
