@@ -4,12 +4,17 @@
   grid-gap: 50px;
   padding: 5%;
 }
+
 .main-tag-display {
   grid-column-start: 1;
   grid-column-end: 4;
   background-color: white;
   width: auto;
-  padding-top: 5px;
+  padding-top: 10px;
   padding-left: 5px;
   border-radius: 5px;
+}
+
+.main-tag-display{
+  font-style: italic;
 }
