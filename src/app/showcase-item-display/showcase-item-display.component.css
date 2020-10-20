@@ -5,11 +5,11 @@
 }
 
 .header-image {
-  background-image: url('../../assets/logo.png');
+  background-image: url("../../assets/logo.png");
   background-size: cover;
 }
 
-.title{
+.title {
   color: #0055aa;
 }
 
@@ -17,4 +17,3 @@
   height: 300px;
   border: 1px solid rgb(73, 72, 72);
 }
-
