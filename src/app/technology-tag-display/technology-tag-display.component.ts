@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Technology } from '../Technology';
 
 @Component({
@@ -8,13 +8,8 @@ import { Technology } from '../Technology';
 })
 export class TechnologyTagDisplayComponent implements OnInit {
   @Input() Tags: Technology[];
-  @Output() filter = new EventEmitter();
 
   constructor() {}
 
   ngOnInit(): void {}
-
-  onFilter(tag: Technology) {
-    this.filter.emit(tag);
-  }
 }

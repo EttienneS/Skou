@@ -1,7 +1,7 @@
 .showcase-card {
   max-width: 400px;
   min-width: 200px;
-  background: rgb(255, 255, 255);
+  background: #ffffff;
 }
 
 .header-image {
@@ -13,7 +13,17 @@
   color: #0055aa;
 }
 
+
 .preview-image {
   height: 300px;
   border: 1px solid rgb(73, 72, 72);
+}
+
+.showcase-card:hover {
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2),
+    0 10px 10px 0 rgba(0, 0, 0, 0.14), 0 10px 10px 0 rgba(0, 0, 0, 0.12) !important;
+  transform: translate3d(0, 0, 0);
+  transition: background 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }

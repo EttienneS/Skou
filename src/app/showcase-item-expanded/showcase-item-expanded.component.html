@@ -1,5 +1,28 @@
-<div class="detail-container" >
-    <showcase-item-display [showcaseitem]="showcaseitem">
-
-    </showcase-item-display>
+<div class="detail-container">
+  <mat-card mat-ripple routerLink="/all" class="showcase-card">
+    <mat-card-header>
+      <div mat-card-avatar class="header-image"></div>
+      <mat-card-title class="title">{{ showcaseitem.Name }}</mat-card-title>
+      <mat-card-subtitle>{{ showcaseitem.SubTitle }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{ showcaseitem.Description }}.</p>
+      
+    </mat-card-content>
+    <mat-card-actions>
+      <a mat-raised-button color="primary" href="{{ showcaseitem.DemoUrl }}"
+        >Live Demo</a
+      >
+      <a
+        mat-raised-button
+        class="last-child"
+        color="accent"
+        href="{{ showcaseitem.ProjectUrl }}"
+        >Source</a
+      >
+    </mat-card-actions>
+    <mat-card-footer class="footer">
+      <technology-tag-display [Tags]="showcaseitem.Tags" ></technology-tag-display>
+    </mat-card-footer>
+  </mat-card>
 </div>

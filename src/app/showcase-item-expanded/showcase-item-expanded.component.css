@@ -1,3 +1,27 @@
-.detail-container{
-    padding: 50px;
+.detail-container {
+  padding: 50px;
+}
+
+.showcase-card {
+  max-width: 100%;
+  min-width: 90%;
+  background: rgb(255, 255, 255);
+}
+
+.header-image {
+  background-image: url("../../assets/logo.png");
+  background-size: cover;
+}
+
+.title {
+  color: #0055aa;
+}
+
+.preview-image {
+  height: 300px;
+  border: 1px solid rgb(73, 72, 72);
+}
+
+.footer{
+  padding: 10px;
 }

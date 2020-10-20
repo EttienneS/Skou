@@ -4,10 +4,7 @@
       <mat-card-title class="title">{{ showcaseitem.Name }}</mat-card-title>
       <mat-card-subtitle>{{ showcaseitem.SubTitle }}</mat-card-subtitle>
     </mat-card-header>
-    <technology-tag-display
-      [Tags]="showcaseitem.Tags"
-      (filter)="onFilter($event)"
-    ></technology-tag-display>
+    
     <img
       mat-card-image
       src="{{ showcaseitem.Image }}"
@@ -17,16 +14,6 @@
     <mat-card-content>
       <p>{{ showcaseitem.Description }}.</p>
     </mat-card-content>
-    <mat-card-actions>
-      <a mat-raised-button color="primary" href="{{ showcaseitem.DemoUrl }}"
-        >Live Demo</a
-      >
-      <a
-        mat-raised-button
-        class="last-child"
-        color="accent"
-        href="{{ showcaseitem.ProjectUrl }}"
-        >Source</a
-      >
-    </mat-card-actions>
+    
+    <technology-tag-display [Tags]="showcaseitem.Tags"></technology-tag-display>
   </mat-card>
