@@ -8,7 +8,7 @@ import { IShowcaseItem } from '../IShowcaseItem';
 })
 export class ShowcaseItemDisplayComponent {
   @Input() showcaseitem: IShowcaseItem;
-  @Output() hide = new EventEmitter();
+  @Output() focus = new EventEmitter();
   @Output() filter = new EventEmitter();
 
   constructor() {}
@@ -16,5 +16,9 @@ export class ShowcaseItemDisplayComponent {
   onFilter(tag: string) {
     // bubble up event if anything else subscribes to it
     this.filter.emit(tag);
+  }
+
+  onCardClicked(){
+    this.focus.emit(this.showcaseitem);
   }
 }

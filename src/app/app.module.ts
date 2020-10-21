@@ -8,8 +8,12 @@ import { ShowcaseItemDisplayComponent } from './showcase-item-display/showcase-i
 
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatRippleModule } from '@angular/material/core';
 import { ShowcaseItemContainerComponent } from './showcase-item-container/showcase-item-container.component';
 import { TechnologyTagDisplayComponent } from './technology-tag-display/technology-tag-display.component';
+import { ShowcaseItemExpandedComponent } from './showcase-item-expanded/showcase-item-expanded.component';
+import { MarkdownModule } from 'ngx-markdown';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,6 +21,7 @@ import { TechnologyTagDisplayComponent } from './technology-tag-display/technolo
     ShowcaseItemDisplayComponent,
     ShowcaseItemContainerComponent,
     TechnologyTagDisplayComponent,
+    ShowcaseItemExpandedComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,6 +29,9 @@ import { TechnologyTagDisplayComponent } from './technology-tag-display/technolo
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
+    MatRippleModule,
+    HttpClientModule,
+    MarkdownModule.forRoot({ loader: HttpClient }),
   ],
   providers: [],
   bootstrap: [AppComponent],
