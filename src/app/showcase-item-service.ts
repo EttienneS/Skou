@@ -8,6 +8,7 @@ import { Technology } from './Technology';
 export class ShowcaseItemService {
   showcaseitems: IShowcaseItem[] = [
     {
+      Id: 0,
       Name: 'Lekker Skou',
       SubTitle: 'See all the "lekker" projects!',
       Description: `A "lekker" web application showcase to have a handy landing page for all other projects`,
@@ -18,6 +19,7 @@ export class ShowcaseItemService {
       Tags: [Technology.ANG],
     },
     {
+      Id: 1,
       Name: 'Lekker Kort',
       SubTitle: 'Shorten or make a URL "lekker"!',
       Description: `Tired of drab, informative URLs? Why not inject some 'lekker' flavour into your links with this URL modifier`,
@@ -28,6 +30,7 @@ export class ShowcaseItemService {
       Tags: [Technology.ANG, Technology.NETCORE],
     },
     {
+      Id: 2,
       Name: 'Lekker Luister',
       SubTitle: 'Discover new "lekker" music!',
       Description: `A "lekker" web application to get some music information from music streaming services such as Deezer and Spotify`,
@@ -39,8 +42,12 @@ export class ShowcaseItemService {
     },
   ];
 
-  get(): IShowcaseItem[] {
+  getAll(): IShowcaseItem[] {
     return this.showcaseitems;
+  }
+
+  getItem(id: number): IShowcaseItem {
+    return this.showcaseitems.find((s) => s.Id == id);
   }
 
   add(showcaseItem: IShowcaseItem) {

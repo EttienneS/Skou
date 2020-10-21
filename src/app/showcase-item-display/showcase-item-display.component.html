@@ -1,28 +1,19 @@
-<mat-card class="showcase-card">
-  <mat-card-header>
-    <div mat-card-avatar class="header-image"></div>
-    <mat-card-title class="title" >{{ showcaseitem.Name }}</mat-card-title>
-    <mat-card-subtitle>{{ showcaseitem.SubTitle }}</mat-card-subtitle>
-  </mat-card-header>
-  <technology-tag-display
-    [Tags]="showcaseitem.Tags"
-    (filter)="onFilter($event)"
-  ></technology-tag-display>
-  <img mat-card-image 
-       src="{{ showcaseitem.Image }}" 
-       alt="Preview" 
-       class="preview-image"
-       />
-  <mat-card-content>
-    <p>{{ showcaseitem.Description }}.</p>
-  </mat-card-content>
-  <mat-card-actions>
-    <a mat-raised-button color="primary" href="{{ showcaseitem.DemoUrl }}"
-      >Live Demo</a
-    >
-
-    <a mat-raised-button color="accent" href="{{ showcaseitem.ProjectUrl }}"
-      >Source</a
-    >
-  </mat-card-actions>
-</mat-card>
+  <mat-card mat-ripple (click)="onCardClicked()" class="showcase-card">
+    <mat-card-header>
+      <div mat-card-avatar class="header-image"></div>
+      <mat-card-title class="title">{{ showcaseitem.Name }}</mat-card-title>
+      <mat-card-subtitle>{{ showcaseitem.SubTitle }}</mat-card-subtitle>
+    </mat-card-header>
+    
+    <img
+      mat-card-image
+      src="{{ showcaseitem.Image }}"
+      alt="Preview"
+      class="preview-image"
+    />
+    <mat-card-content>
+      <p>{{ showcaseitem.Description }}.</p>
+    </mat-card-content>
+    
+    <technology-tag-display [Tags]="showcaseitem.Tags"></technology-tag-display>
+  </mat-card>
