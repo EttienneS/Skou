@@ -15,6 +15,7 @@ export class ShowcaseItemService {
       Image:
         'https://images.unsplash.com/photo-1596778402284-8398c7b09521?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
       ProjectUrl: 'https://github.com/lekker-dev/Lekker.Skou',
+      Readme: 'https://raw.githubusercontent.com/lekker-dev/Lekker.Skou/develop/README.md',
       DemoUrl: 'https://lkkr.azurewebsites.net/',
       Tags: [Technology.ANG],
     },
@@ -26,6 +27,7 @@ export class ShowcaseItemService {
       Image:
         'https://lekkerkort.azurewebsites.net/hu-chen-60XLoOgwkfA-unsplash.0c26fed9ae688c2213ed.jpg',
       ProjectUrl: 'https://github.com/lekker-dev/Lekker.Kort',
+      Readme: 'https://raw.githubusercontent.com/lekker-dev/Lekker.Kort/develop/README.md',
       DemoUrl: 'https://lekkerkort.azurewebsites.net/',
       Tags: [Technology.ASPNETCORE, Technology.ANG, Technology.NETCORE],
     },
@@ -36,7 +38,8 @@ export class ShowcaseItemService {
       Description: `A "lekker" web application to get some music information from music streaming services such as Deezer and Spotify`,
       Image:
         'https://images.unsplash.com/photo-1445985543470-41fba5c3144a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
-      ProjectUrl: '',
+      ProjectUrl: 'https://github.com/lekker-dev/Lekker.Luister',
+      Readme: 'https://raw.githubusercontent.com/lekker-dev/Lekker.Luister/develop/README.md',
       DemoUrl: '',
       Tags: [Technology.ASPNETCORE, Technology.ANG, Technology.NETCORE],
     },

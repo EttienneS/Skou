@@ -12,6 +12,8 @@ import { MatRippleModule } from '@angular/material/core';
 import { ShowcaseItemContainerComponent } from './showcase-item-container/showcase-item-container.component';
 import { TechnologyTagDisplayComponent } from './technology-tag-display/technology-tag-display.component';
 import { ShowcaseItemExpandedComponent } from './showcase-item-expanded/showcase-item-expanded.component';
+import { MarkdownModule } from 'ngx-markdown';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { ShowcaseItemExpandedComponent } from './showcase-item-expanded/showcase
     MatCardModule,
     MatButtonModule,
     MatRippleModule,
+    HttpClientModule,
+    MarkdownModule.forRoot({ loader: HttpClient }),
   ],
   providers: [],
   bootstrap: [AppComponent],
