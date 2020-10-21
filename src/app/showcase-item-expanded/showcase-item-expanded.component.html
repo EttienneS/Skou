@@ -1,28 +1,28 @@
 <div class="detail-container">
-  <mat-card mat-ripple routerLink="/all" class="showcase-card">
+  <mat-card class="detail-card">
     <mat-card-header>
       <div mat-card-avatar class="header-image"></div>
       <mat-card-title class="title">{{ showcaseitem.Name }}</mat-card-title>
-      <mat-card-subtitle>{{ showcaseitem.SubTitle }}</mat-card-subtitle>
+      <mat-card-subtitle>
+        <p>{{ showcaseitem.SubTitle }}</p>
+        <technology-tag-display [Tags]="showcaseitem.Tags"></technology-tag-display>
+      </mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-      <p>{{ showcaseitem.Description }}.</p>
-      
+      <div class="description-container">
+        <a mat-raised-button color="primary" href="{{ showcaseitem.DemoUrl }}">Live Demo</a>
+        <a mat-raised-button class="last-child" color="primary" href="{{ showcaseitem.ProjectUrl }}">Source</a>
+        <a mat-raised-button color="warn" routerLink="/all">Back</a>
+      </div>
+
+      <div class="markdown-container">
+        <markdown
+          [src]="showcaseitem.Readme"
+          
+        >
+        </markdown>
+      </div>
     </mat-card-content>
-    <mat-card-actions>
-      <a mat-raised-button color="primary" href="{{ showcaseitem.DemoUrl }}"
-        >Live Demo</a
-      >
-      <a
-        mat-raised-button
-        class="last-child"
-        color="accent"
-        href="{{ showcaseitem.ProjectUrl }}"
-        >Source</a
-      >
-    </mat-card-actions>
-    <mat-card-footer class="footer">
-      <technology-tag-display [Tags]="showcaseitem.Tags" ></technology-tag-display>
-    </mat-card-footer>
+    
   </mat-card>
 </div>
