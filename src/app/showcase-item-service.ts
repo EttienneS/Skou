@@ -27,7 +27,7 @@ export class ShowcaseItemService {
         'https://lekkerkort.azurewebsites.net/hu-chen-60XLoOgwkfA-unsplash.0c26fed9ae688c2213ed.jpg',
       ProjectUrl: 'https://github.com/lekker-dev/Lekker.Kort',
       DemoUrl: 'https://lekkerkort.azurewebsites.net/',
-      Tags: [Technology.ANG, Technology.NETCORE],
+      Tags: [Technology.ASPNETCORE, Technology.ANG, Technology.NETCORE],
     },
     {
       Id: 2,
@@ -38,7 +38,7 @@ export class ShowcaseItemService {
         'https://images.unsplash.com/photo-1445985543470-41fba5c3144a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
       ProjectUrl: '',
       DemoUrl: '',
-      Tags: [Technology.ANG, Technology.NETCORE],
+      Tags: [Technology.ASPNETCORE, Technology.ANG, Technology.NETCORE],
     },
   ];
 
