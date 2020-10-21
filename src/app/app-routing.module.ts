@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
 import { ShowcaseItemContainerComponent } from './showcase-item-container/showcase-item-container.component';
 import { ShowcaseItemExpandedComponent } from './showcase-item-expanded/showcase-item-expanded.component';
 
