@@ -1,27 +1,26 @@
-# Skou
+# Lekker.Skou App Showcase
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.4.
+Angular landing page for all of the "lekker" sites.  A place to see all of the projects along with technologies used.
 
-## Development server
+## Demo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Live demo can be seen here: https://lkkr.azurewebsites.net/
 
-## Code scaffolding
+## Building and running
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+``` powershell
 
-## Build
+git clone https://github.com/lekker-dev/Lekker.Skou.git
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+cd Lekker.Skou
+ng serve
 
-## Running unit tests
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Technologies
 
-## Running end-to-end tests
+Angular
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Extending and customizing
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+While the site was made to showoff our projects it can easily be modified to show pretty much anything.  Simply change the input data in the `showcase-item-service.ts` class and you are good to go!

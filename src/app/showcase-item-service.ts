@@ -29,7 +29,7 @@ export class ShowcaseItemService {
       ProjectUrl: 'https://github.com/lekker-dev/Lekker.Kort',
       Readme: 'https://raw.githubusercontent.com/lekker-dev/Lekker.Kort/develop/README.md',
       DemoUrl: 'https://lekkerkort.azurewebsites.net/',
-      Tags: [Technology.ANG, Technology.NETCORE],
+      Tags: [Technology.ASPNETCORE, Technology.ANG, Technology.NETCORE],
     },
     {
       Id: 2,
@@ -41,7 +41,7 @@ export class ShowcaseItemService {
       ProjectUrl: 'https://github.com/lekker-dev/Lekker.Luister',
       Readme: 'https://raw.githubusercontent.com/lekker-dev/Lekker.Luister/develop/README.md',
       DemoUrl: '',
-      Tags: [Technology.ANG, Technology.NETCORE],
+      Tags: [Technology.ASPNETCORE, Technology.ANG, Technology.NETCORE],
     },
   ];
 
